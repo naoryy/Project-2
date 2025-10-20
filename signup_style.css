@@ -1,0 +1,138 @@
+:root {
+    --background: #1a1a2e;
+    --color: #ffffff;
+    --primary-color: #0f3460;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    justify-content: center;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: var(--color);
+    color: var(--color);
+    letter-spacing: 1px;
+    transition: background 0.2s ease;
+}
+
+a {
+    text-decoration: none;
+    color: #3b82f6;
+}
+
+.button-div p {
+    text-align: center;
+    color: #000;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 45px;
+    font-weight: 700;
+    color: #3b82f6;
+}
+
+i {
+    color: #3b82f6;
+    font-size: 16px;
+    display: block;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form-container h1 {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup-container {
+    position: relative;
+    width: 22.2rem;
+}
+
+.form-container {
+    border: 1px solid hsla(0, 0%, 65%, 0.158);
+    box-shadow: 0 0 36px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    backdrop-filter: blur(20px);
+    z-index: 99;
+    padding: 2rem;
+    margin: 1rem 0;
+}
+
+.signup-container form input {
+    display: block;
+    padding: 14.5px;
+    width: 100%;
+    margin: 1rem 0;
+    outline: none;
+    color: var(--background);
+    background-color: #9191911f;
+    border: none;
+    border-radius: 5px;
+    font-weight: 500;
+    letter-spacing: 0.8px;
+    font-size: 15px;
+    backdrop-filter: blur(15px);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.signup-container form input:focus {
+    box-shadow: 0 0 30px 1px rgba(0, 0, 0, 0.2);
+}
+
+.signup-container form button,
+.login-button {
+    background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+    color: var(--color);
+    display: block;
+    padding: 13px;
+    border-radius: 5px;
+    outline: none;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    font-weight: bold;
+    width: 100%;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: all 0.1s ease-in-out;
+    border: none;
+}
+
+.signup-container form button:hover,
+.login-button:hover {
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.15);
+    transform: scale(1.02);
+}
+
+.button-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.opacity {
+    opacity: 0.6;
+}

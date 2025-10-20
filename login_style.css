@@ -1,0 +1,124 @@
+    * {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    justify-content: center;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: white;
+    color: white;
+    letter-spacing: 1px;
+    transition: background 0.2s ease;
+}
+
+a {
+    text-decoration: none;
+    color: #3b82f6;
+}
+
+p {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+    color: #3b82f6;}
+
+.button-div p{
+    text-align: center;
+    color: #000;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 45px;
+    font-weight: 700;
+    color: #3b82f6;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    position: relative;
+    width: 22.2rem;
+}
+
+.form-container {
+    background: white;
+    box-shadow: 0 0 36px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 2rem;
+    z-index: 99;
+}
+
+.form-container h1 {
+    text-align: center;
+    width: 100%;
+    color: #3b82f6;
+    opacity: 0.6;
+    font-size: 45px;
+    font-weight: 700;
+    margin: 0 0 1rem 0;
+}
+
+.login-container form input {
+    display: block;
+    padding: 14.5px;
+    width: 100%;
+    margin: 1rem 0;
+    outline: none;
+    background-color: #eee;
+    border: none;
+    border-radius: 5px;
+    font-weight: 500;
+    letter-spacing: 0.8px;
+    font-size: 15px;
+    backdrop-filter: blur(15px);
+}
+
+.login-container form input:focus {
+    box-shadow: 0 0 30px 1px rgba(0, 0, 0, 0.2);
+}
+
+.login-container form button{
+    background: linear-gradient(135deg, #3b82f6 0, #8b5cf6 100%);
+    color: white;
+    display: block;
+    padding: 13px 24px;
+    border-radius: 5px;
+    outline: none;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    transition: box-shadow 0.1s, transform 0.1s;
+    width: auto;
+    min-width: 100px;
+}
+
+.login-container form button:hover,
+.login-button:hover,
+.signup-button:hover {
+    box-shadow: 0 0 10px 2px rgba(0,0,0,0.15);
+    transform: scale(1.02);
+}
+
+.button-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.opacity {
+    opacity: 0.6;
+}
