@@ -8,7 +8,7 @@ $database_name = "project-database";
 $db = mysqli_connect($hostname, $username, $password, $database_name);
 
 if($db->connect_error){
-    echo "connection failed!";
+    error_log("DB Connection failed: " . $db->connect_error);
     die('error!');
 }
 
